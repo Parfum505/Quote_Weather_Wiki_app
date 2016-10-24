@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title Page</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/weather-icons.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- begin quote_bg -->
+	<div class="bg quote_bg">
+		<div class="quote in_center">
+			<h1 class="text-center">Random Quote</h1>
+			<div class="row">
+				<div class="qoute_text">
+					<q>
+						The reasonable man adapts himself to the world, the unreasonable man persists in trying to adapt the world to himself. Therefore, all progress depends on the unreasonable man.
+					</q>
+				</div>
+				<span class="quote_author pull-right">&mdash; George Shaw</span>
+			</div>
+			<div class="row quote_btn">
+				<a class="stamp pull-right" title="Get a new quote">
+					<img class="img-responsive" src="img/stamp.png" alt="New Quote"></a>
+				<a class="twitt pull-left" title="Tweet this quote"> <i class="fa fa-twitter-square " aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- end quote_bg -->
+	<!-- begin weather_bg -->
+	<div class="bg weather_bg">
+		<div class="weather text-center in_center">
+			<h2 class="text-center">Local Weather App</h2>
+			<div class="row bg_white">
+				<div class="city">City</div>
+				<div class="address">Address</div>
+			</div>
+			<div class="row bg_white">
+				<div class="weather_icon col-xs-6"> <i class="wi"></i>
+				</div>
+				<div class="col-xs-6">
+					<div class="temp inline_bl">
+						<span class="temp_value"></span>
+						&deg;
+					</div>
+					<div class="temp_btn inline_bl">
+						<span class="f selected">F</span>
+						<span class="slash">/</span>
+						<span class="c">C</span>
+					</div>
+				</div>
+			</div>
+			<div class="row bg_white">
+				<div class="summary col-xs-6"></div>
+				<div class="tempLike col-xs-6">
+					Feels like&#160;
+					<span class="tempLike_value"></span>
+					&deg;
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end weather_bg -->
+
+	<!-- begin wiki_bg -->
+	<div class="bg wiki_bg">
+		<div class="wiki text-center">
+			<h2>Wikipedia Viewer</h2>
+			<a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random" class="rendom ">Random Article</a>
+			<div class="search_form">
+				<form id="wiki" method="post">
+					<span class="input">
+					<input class="input__field input__field--yoko" type="text" id="input_text" />
+
+					<label class="input__label input__label--yoko" for="input_text">
+						<span class="input__label-content input__label-content--yoko">Type your search above</span>
+					</label>
+					<span id="search_btn"><i class="fa fa-search" aria-hidden="true"></i></span>
+					</span>
+
+				</form>
+			</div>
+			<ul class="result"></ul>
+
+		</div>
+	</div>
+	<!-- end wiki_bg -->
+	<!-- jQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<!-- Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="js/script.js"></script>
+</body>
+</html>

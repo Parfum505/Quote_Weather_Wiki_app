@@ -1,0 +1,441 @@
+@import url(https://fonts.googleapis.com/css?family=Rouge+Script);
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+
+
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	color: #2d2d2d;
+	font-family: 'PT Sans',Arial,sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+	text-rendering: optimizeSpeed;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+.bg{
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	overflow: auto;
+	padding: 15px 0;
+}
+.inline_bl{
+	display: inline-block;
+}
+.in_center{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+/* QUOTE */
+
+.quote_bg{
+	background: url(../img/quote_bg.jpg) no-repeat left center;
+	background-size: cover;
+}
+.quote{
+	width: 600px;
+	height: auto;
+	margin: 0 auto 20px;
+	background: url(../img/Paper.png) center no-repeat;
+	background-size: 100% 100%;
+}
+
+.quote h1{
+	font-family: 'Rouge Script', cursive;
+	font-size: 300%;
+	font-weight: bold;
+	margin: 30px 0 80px;
+}
+.qoute_text{
+	width: 70%;
+	margin: 0 auto 15px;
+	line-height: 120%;
+	font-family: 'Courgette', cursive;
+	font-size: 130%;
+	font-weight: bold;
+}
+.quote_author{
+	font-family: 'Courgette', cursive;
+	font-size: 110%;
+	margin-right: 20%;
+}
+.stamp{
+	margin-right: 15%;
+	transition: .3s;
+}
+.stamp img{
+	transition: .3s;
+}
+.stamp:hover img{
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.twitt{
+	margin-left: 15%;
+}
+.twitt .fa-twitter-square{
+	font-size: 350%;
+	color: #4f301c;
+	transition: .3s;
+}
+.twitt:hover .fa-twitter-square{
+	color: #a94442;
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* WEATHER */
+
+.weather_bg{
+	background: url(../img/weather_bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+.weather{
+	width: 500px;
+	font-family: 'Courgette', cursive;
+	font-size: 150%;
+	margin: 0 auto;
+}
+.weather h2{
+	font-family: 'Courgette', cursive;
+	font-size: 150%;
+	font-weight: bold;
+	color: #e9cc00;
+	margin:0 0 40px;
+	text-shadow: 5px 5px 6px #000;
+}
+.bg_white{
+	background-color: rgba(255, 255, 255, .8);
+	border-radius: 10px;
+	box-shadow: 4px 4px 11px #000;
+	margin-bottom: 20px;
+	padding: 10px 0;
+}
+.city::after{
+	content: "";
+	display: block;
+	width: 40%;
+	height: 2px;
+	margin: 10px auto;
+	background-color: #09a3e7;
+}
+.weather_icon{
+	margin-top: 17px;
+}
+.temp{
+	font-size: 200%;
+}
+.temp_btn{
+	cursor: pointer;
+	color: #979797;
+}
+.selected{
+	color: #000;
+}
+.summary, .tempLike{
+	font-size: 80%;
+	color: #42423e;
+}
+.wi{
+	font-size: 250%;
+	color: #09a3e7;
+}
+
+/* WIKI */
+
+.wiki_bg{
+	background: url(../img/wiki_bg1.png) no-repeat center;
+	background-size: contain;
+	height: auto;
+	overflow: visible;
+
+}
+.wiki h2{
+	text-indent: -99999px;
+	margin: 0;
+}
+
+/* WIKI FORM */
+
+#wiki{
+	width: 90%;
+	margin: 0 auto;
+}
+
+	/* WIKI RENDOM_BTN */
+
+.rendom{
+	display: inline-block;
+	position: relative;
+	margin: 0 auto;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #f2f2f2;
+  background-image: linear-gradient(to bottom, #f2f2f2, #8a8a8a);
+  border-radius: 28px;
+  box-shadow: 5px 5px 6px #a6a6a6;
+  color: #ffffff;
+  font-size: 100%;
+  font-weight: bold;
+  z-index: 2;
+  padding: 10px 20px 10px 20px;
+  transition: all .5s;
+}
+
+.rendom.click,.rendom:visited,
+.rendom:focus {
+	outline: none;
+	text-decoration: none;
+	color: #ffffff;
+}
+.rendom:hover{
+	text-decoration: none;
+	color: #7c5555;
+	background: #8a8a8a;
+	background-image: linear-gradient(to bottom, #8a8a8a, #f2f2f2);
+}
+.rendom::after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 28px;
+}
+.rendom.click::after{
+	box-shadow: 0px 0px 0px 0px #eca29b;
+	-webkit-animation: anim-shadow 0.3s forwards;
+	animation: anim-shadow 0.3s forwards;
+}
+
+@-webkit-keyframes anim-shadow {
+	to {
+	box-shadow: 0px 0px 100px 50px;
+	opacity: 0;
+	}
+}
+
+@keyframes anim-shadow {
+	to {
+	box-shadow: 0px 0px 100px 50px;
+	opacity: 0;
+	}
+}
+
+	/* WIKI SEARCH_BTN */
+
+#search_btn{
+	position: absolute;
+	top: 9px;
+	right: -45px;
+	cursor: pointer;
+}
+#search_btn i{
+	font-size: 200%;
+	color: #9c9c9c;
+}
+
+	/* WIKI INPUT */
+
+.input {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin: 1em;
+	max-width: 350px;
+	width: calc(100% - 2em);
+	vertical-align: top;
+}
+
+.input__field {
+	position: relative;
+	display: block;
+	float: right;
+	padding: 0.8em;
+	border: none;
+	border-radius: 0;
+	font-weight: bold;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+	outline: none;
+}
+
+.input__label {
+	display: inline-block;
+	float: right;
+	padding: 0 1em;
+	font-weight: bold;
+	font-size: 70.25%;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.input__label-content {
+	position: relative;
+	display: block;
+	padding: 1.6em 0;
+	width: 100%;
+}
+.input__field--yoko {
+	z-index: 10;
+	width: 100%;
+	background: transparent;
+	opacity: 0;
+	transition: opacity 0.3s;
+	font-size: 100%;
+	width: 100%;
+	color: #fff;
+}
+.input__label--yoko {
+	position: relative;
+	width: 100%;
+	color: #fff;
+	font-size: 95%;
+	text-shadow: 0 0 10px #000;
+}
+.input__label--yoko::before {
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	height: 3em;
+	background: rgba(156, 156, 156, 0.7);
+	border-radius: 10px;
+	-webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+	transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+	-webkit-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	    transform-origin: 50% 100%;
+	transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.input__label--yoko::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0.25em;
+	background: #9c9c9c;
+	-webkit-transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	    transform-origin: 50% 0%;
+	transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.input__label-content--yoko {
+	padding: 0.75em 0;
+}
+.input__field--yoko:focus,
+.input--filled .input__field--yoko {
+	opacity: 1;
+	transition-delay: 0.3s;
+}
+.input__field--yoko:focus + .input__label--yoko::before,
+.input--filled .input__label--yoko::before {
+	-webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
+	transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
+}
+.input__field--yoko:focus + .input__label--yoko,
+.input--filled .input__label--yoko {
+	pointer-events: none;
+}
+.input__field--yoko:focus + .input__label--yoko::after,
+.input--filled .input__label--yoko::after {
+	-webkit-transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
+	transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
+}
+
+	/* WIKI RESULT */
+
+.error_text{
+	font-size: 110%;
+	color: red;
+}
+.result{
+	width: 80%;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+.result li{
+	text-align: left;
+	padding: 2%;
+	background-color: rgba(255,255,255, .5);
+	margin-bottom: 18px;
+	background: url(../img/wiki_text_bg.png);
+	border: 2px solid transparent;
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	transition: 0.5s;
+}
+.result li:hover{
+	background-image: none;
+	background-color: rgba(255,255,255, .4);
+	border: 2px solid #9c9c9c;
+}
+.result a, .result a:hover{
+	text-decoration: none;
+	color: #2d2d2d;
+	font-size: 90%;
+}
+.title{
+	font-size: 120%;
+	font-weight: bold;
+	margin-bottom: 1%;
+}
+
+@media only screen and (max-width: 992px){
+	.qoute_text{font-size: 110%;}
+}
+
+@media only screen and (max-width: 767px){
+	.quote{width: 400px;}
+	.quote h1{font-size: 220%; margin: 30px 0 35px;}
+	.qoute_text{font-size: 110%;}
+	.quote_author{font-size: 95%;}
+	.twitt{font-size: 90%;}
+	.stamp{width: 120px;}
+
+/* WEATHER */
+
+.weather{width: 60%; font-size: 120%;}
+
+}
+
+@media only screen and (max-width: 480px){
+	.quote{width: 90%;}
+	.qoute_text{font-size: 90%;}
+
+/* WEATHER */
+.weather{width: 70%; font-size: 100%;}
+
+/* WIKI */
+	.title{font-size: 100%;}
+	.result a{font-size: 75%;}
+	#search_btn{right: -37px;}
+}
